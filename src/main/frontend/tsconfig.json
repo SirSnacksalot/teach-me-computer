@@ -1,0 +1,39 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": false,
+        "removeComments": true,
+        "listEmittedFiles": false,
+        "newLine": "LF",
+        "downlevelIteration" : true,
+        "incremental": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "skipLibCheck": true,
+        "plugins": [{ "name": "typescript-plugin-css-modules" }],
+        "isolatedModules": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "typeRoots": ["node_modules/@types", "src/typings"],
+        "esModuleInterop": true,
+    },
+    "exclude": [
+        "node_modules", 
+    ],
+    "include": [
+        "src/**/*"
+    ],
+    "files": [
+        "node_modules/@types/react/index.d.ts",
+        "node_modules/@types/react-dom/index.d.ts",
+        // "node_modules/@types/lodash/index.d.ts",
+        // "node_modules/moment/moment.d.ts",
+        // "node_modules/@types/moment-timezone/index.d.ts"
+    ]
+}

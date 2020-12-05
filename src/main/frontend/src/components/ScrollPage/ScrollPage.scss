@@ -1,0 +1,12 @@
+@import '../../styles/constants.scss';
+
+.scrollPage {
+    color: $color-neutral-200;
+    flex: 0 0 50vw;
+    width: 50vw;
+    // border: 1px solid $color-neutral-200;
+    border: none;
+    text-align: center;
+
+    &:first-of-type { margin-left: 25vw; }
+}

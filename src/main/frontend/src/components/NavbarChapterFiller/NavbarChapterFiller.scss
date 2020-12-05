@@ -1,0 +1,12 @@
+
+.filler {
+        display: flex; align-items: center;
+        height: 25px;
+        cursor: pointer;
+
+    .filler__line {
+        height: 5px;
+        width: 100%;
+        background: linear-gradient(0deg, transparent 30%, gray, transparent 70%);
+    }
+}

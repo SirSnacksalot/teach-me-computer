@@ -1,0 +1,23 @@
+@import '../../styles/constants.scss';
+
+.header {
+    position: relative;
+    height: $height-header; padding: 12px 15px;
+    box-sizing: border-box;
+
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+    z-index: 10;
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+    &__title {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0; color: #FFF;
+        font-size: 25px;
+        font-weight: 300;
+    }
+}
+

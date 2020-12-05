@@ -1,0 +1,43 @@
+@import '../../styles/constants.scss';
+
+.scroll { position: relative; 
+    box-sizing: border-box;
+    height: $height-scroll; 
+    padding: $height-scroll-padding-top 0 0;
+    color: gray;
+
+    &__content { 
+        display: flex; flex-flow: row nowrap;
+        height: $height-scroll-page;
+        overflow: auto;
+
+        &__chapter {
+            &__title {
+                font-size: 30px;
+            }
+        }
+
+        &__endpad {
+            flex: 0 0 25vw;
+        }
+    }
+
+    &__edge { 
+        @mixin edge { position: absolute; top: 0; width: 15vw; height: 100%; 
+            z-index: 2;
+        }
+        
+        &_left { 
+            @include edge;
+            left: 0; 
+            background: linear-gradient(to right, #FFF 40%, rgba(255, 255, 255, 0)); 
+        }
+
+        &_right { 
+            @include edge;
+            right: 0;
+            background: linear-gradient(to left, #FFF 40%, rgba(255, 255, 255, 0)); 
+        }
+    }
+
+}

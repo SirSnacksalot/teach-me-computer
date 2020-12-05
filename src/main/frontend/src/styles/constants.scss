@@ -1,0 +1,24 @@
+$height-header: 64px;
+
+$height-scroll: calc(100vh - #{$height-header});
+$height-scroll-padding-top: 64px;
+$height-navbar: 150px;
+$height-scroll-page: calc(#{$height-scroll} - #{$height-scroll-padding-top} - #{$height-navbar});
+
+$width-navbar: 100vw;
+$width-navbar-margin: 64px;
+$width-navbar-chapter-marker: 30px;
+
+// Font
+$font-stack: 'Lato', Helvetica, sans-serif;
+
+// Color
+$color-neutral-100: #000;
+$color-neutral-200: #1d2129;
+$color-neutral-300: #1d2129;
+$color-neutral-400: #1d2129;
+$color-neutral-500: #1d2129;
+$color-neutral-600: #1d2129;
+$color-neutral-700: #1d2129;
+$color-neutral-800: #1d2129;
+$color-neutral-900: #FFF;
